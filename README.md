@@ -42,7 +42,7 @@ For deploying your bot on messenger, you have to do the following work on facebo
         This command will run a server in your localhost on port 5005, and this server will work as a webhook for your FB             messenger app
         **NOTE**:- make sure you have added your credentials in credentials.yml file as mentioned above
 5. **verifying a webhook**
-      - Before messenger sends any HTTP request to your webhook, it will verify your webhook with using a callBack URL and a ***verify**
+      - Before messenger sends any HTTP request to your webhook, it will verify your webhook with using a callBack URL and a         ***verify**
       - callBack URL must be secured(https) but our bot is running on a localhost and it is http, so we can make use of               **ngrok** to generate a secured public URL, run this following command on terminal after installing ngrok in your             computer
         **ngrok http 5005**
       - copy https version of generated URL and paste it to the below location
@@ -52,3 +52,6 @@ For deploying your bot on messenger, you have to do the following work on facebo
       - and put value of ***verify*** into **Verify Token**
       Enter verify and bammmmmm.
       Your webhook is verified.
+      - After verifying a webhook, select at least the **messaging** and **messaging_postback** subscriptions
+
+Now search your FB page on messenger and start talking to your bot. Your app is still in development phase so only you can find your FB page on messenger(only admin), others cant find it!! For that you have to make your messenger APP go live. We will see how to do that in future post.
